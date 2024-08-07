@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url("hospital.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #f9f9f9; /* Light gray background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            width: 200px;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            background-color: #3498db;
+            color: #ffffff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button[value="Clinic"] {
+            background-color: #e74c3c;
+        }
+
+        .button[value="Doctor"] {
+            background-color: #2ecc71;
+        }
+
+        .button[value="Patient"] {
+            background-color: #f39c12;
+        }
+
+        .button[value="Appointments"] {
+            background-color: #9b59b6;
+        }
+
+        .button[value="Test"] {
+            background-color: #34495e;
+        }
+
+        
+        .button[value="Clinic"]:hover {
+            background-color: #c0392b; 
+        }
+
+        .button[value="Doctor"]:hover {
+            background-color: #27ae60; 
+        }
+
+        .button[value="Patient"]:hover {
+            background-color: #d35400; 
+        }
+
+        .button[value="Appointments"]:hover {
+            background-color: #8e44ad; 
+        }
+
+        .button[value="Test"]:hover {
+            background-color: #2c3e50; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <h1>MENU</h1>
+            <div class="button-container">
+                <input type="button" class="button" value="Clinic" onclick="openclinic()">
+                <input type="button" class="button" value="Doctors" onclick="opendoctors()">
+                <input type="button" class="button" value="Patient" onclick="openpatient()">
+                <input type="button" class="button" value="Appointments" onclick="openappointments()">
+                <input type="button" class="button" value="Test" onclick="opentest()">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function openclinic() {
+        window.open("clinic.html", "_self");
+    }
+
+    function opendoctors() {
+        window.open("doctors.html", "_self");
+    }
+
+    function openpatient() {
+        window.open("patient.html", "_self");
+    }
+
+    function openappointments() {
+        window.open("appointments.html", "_self");
+    }
+
+    function opentest() {
+        window.open("test.html", "_self");
+    }
+</script>
+
+</html>

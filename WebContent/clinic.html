@@ -1,0 +1,123 @@
+<head>
+<style>
+		th{
+			text-align: left;
+			padding: 10px;
+		}
+		body { 
+            font-family: Arial, sans-serif;
+            background-image: url("clinic.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+        } 
+        table { 
+            border: 1px solid #ccc; 
+            border-collapse: collapse; 
+            width: 600px;
+            height: 300px; 
+            margin: 50px auto; 
+            background-color: #f9f9f9; 
+        } 
+        input[type="text"] { 
+            width: 100%; 
+            padding: 8px; 
+            box-sizing: border-box; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+        } 
+        input[type="submit"] {
+            padding: 8px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            background-color: #0E2954; 
+            color: white; 
+            cursor: pointer; 
+        }
+        input[type="button"],input[type="reset"]{
+            padding: 8px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            background-color: #0E2954; 
+            color: white; 
+            cursor: pointer; 
+        } 
+        marquee {
+            font-size: 24px;
+            font-weight: bold;
+            animation: marquee 8s linear infinite;
+            background-color: #0E2954; 
+            color: white;
+        }
+</style>
+</head>
+<body>
+<form name=f method=post action=clinic.jsp>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <table border"0" align="center">
+    	<tr>
+    		<td colspan="2"><Marquee><b>CLINIC INTERFACE</b></Marquee></td>
+    	</tr>
+        <tr>
+            <th>Clinic Id</th>
+            <td><input type="text" name="t1"></td>
+        </tr>
+        <tr>
+            <th>Clinic Doctor</th>
+            <td><input type="text" name="t2"></td>
+        </tr>
+        <tr>
+            <th>Clinic Type</th>
+            <td><input type="text" name="t3"></td>
+        </tr>
+        <tr>
+            <th>Clinic Description</th>
+            <td><input type="text" name="t4"></td>
+        </tr>
+        <tr>
+            <th>Clinic Place</th>
+            <td><input type="text" name="t5"></td>
+        </tr>
+        <tr>
+            <th>Clinic Address</th>
+            <td><input type="text" name="t6"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center>
+                    <input type="reset" value="NEW" name="b1">
+                <input type="submit" value="SAVE" name="b1">
+                <input type="submit" value="UPDATE" name="b1">
+                <input type="submit" value="DELETE" name="b1">
+                </center>
+            </td>
+            
+            
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center>
+                    <input type="submit" value="EXIT" name="b1" onclick="window.close()">
+                <input type="submit" value="ALL SEARCH" name="b1">
+                <input type="submit" value="SEARCH" name="b1">
+                <input type="button" value="MENU" name="b1" onclick=openmenu()>
+                </center>
+            </td>
+        </tr>
+        
+    </table>
+    </form>
+    </body>
+    <script>
+    function openmenu() 
+    { 
+     window.open("menu.html","_self") 
+    }
+    </script>
